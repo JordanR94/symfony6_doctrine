@@ -6,6 +6,9 @@
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/doctrine-bundle": "^2.10",
+        "doctrine/doctrine-migrations-bundle": "^3.2",
+        "doctrine/orm": "^2.16",
         "knplabs/knp-time-bundle": "^1.18",
         "symfony/asset": "6.1.*",
         "symfony/console": "6.1.*",
@@ -71,7 +74,8 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.1.*"
+            "require": "6.1.*",
+            "docker": true
         }
     },
     "require-dev": {
