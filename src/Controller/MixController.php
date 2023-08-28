@@ -16,7 +16,8 @@ class MixController extends AbstractController
         $mix = new VinylMix();
         $mix->setTitle('Testing out the title');
         $mix->setDescription('I have no idea what to write');
-        $mix->setGenre('pop');
+        $genres = ['pop', 'rock'];
+        $mix->setGenre($genres[array_rand($genres)]);
         $mix->setTrackCount(rand(5,20));
         $mix->setVotes(rand(-50, 50));
 
